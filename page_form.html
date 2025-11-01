@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Form</title>
+    <link rel="icon" type="image/png"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZM4Uuq6A7vU1cexKJlExF5uY2dCPM6KVrg&s">
+</head>
+
+<body>
+
+    <section class="left">
+        <div class="left_background">
+            <img src="https://ardi.ge/assets/frontend/assets/img/login_bg.jpg" alt="ardiback">
+        </div>
+        <div class="left_text">
+            <img src="https://ardi.ge/assets/frontend/assets/img/logo_center_en.svg" alt="ardilogo">
+        </div>
+    </section>
+
+
+    <section class="form">
+        <div class="form_labels">
+            <label class="contact_person">Contact Person</label>
+            <label>Contact Number</label>
+            <label>Insurance Type</label>
+            <label>Personal or Business?</label>
+            <label>Additional Comment</label>
+        </div>
+        <div class="total_form">
+            <div class="welcome_texts">
+                <div class="big_text">ARDI Insurance</div>
+                <div class="middle_text">Please, Fill out this form</div>
+                <div class="small_text">We will contact you shortly</div>
+            </div>
+
+            <form>
+                <div class="name_surname">
+                    <input type="text" required placeholder="Name">
+                    <input type="text" required placeholder="Surname">
+                </div>
+                <div class="number">
+                    <input required placeholder="Enter numbers only" type="number" min="0">
+                </div>
+                <div class="dropdown">
+                    <select id="dropdown" name="dropdown">
+                        <option value="business">Health</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Property">Property</option>
+                        <option value="Motor">Motor</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <label> Personal <input type="radio" id="Personal" name="Gender" required> </label>
+                    <label> Company <input type="radio" id="Company" name="Gender" required> </label>
+                </div>
+                <div class="comment">
+                    <input placeholder="Additional Comment">
+                </div>
+                <div class="button">
+                    <button type="submit">Contact Me</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <style>
+        @media (max-width: 1024px) {
+
+            .left {
+                display: none;
+            }
+
+            body {
+                background-image: url(https://ardi.ge/assets/frontend/assets/img/login_bg.jpg);
+                background-size: cover;
+                padding-top: 15%;
+            }
+
+
+            .form_labels {
+                background-color: #e8e8e8;
+
+                margin-bottom: 20%;
+                margin-left: 15%;
+            }
+
+            .total_form {
+                width: 100%;
+                padding-top: 2%;
+                margin-left: 5%;
+
+            }
+
+            .middle_text,
+            .small_text,
+            .radio {
+
+                color: white;
+            }
+
+            .radio label:hover,
+            input:hover,
+            .select:hover {
+                background: none !important;
+            }
+
+        }
+
+        @media (max-width: 430px) {
+
+            .left {
+                display: none;
+            }
+
+            body {
+                background-image: url(https://ardi.ge/assets/frontend/assets/img/login_bg.jpg);
+                background-size: 210%;
+
+
+            }
+
+
+            .form {
+
+                padding-top: 24%;
+
+
+            }
+
+            form {
+                margin-left: -15%;
+                margin-right: 2%;
+                margin-top: -15%;
+
+
+            }
+
+            .name_surname {
+
+                width: 10% !important;
+            }
+
+            .welcome_texts {
+
+                margin-left: -95%;
+                margin-top: -15%;
+            }
+
+            .form_labels {
+                background-color: #e8e8e8;
+                margin-right: 15%;
+                margin-left: -5%;
+                margin-top: 10%;
+                padding-top: 5%;
+
+            }
+
+            .radio {
+                width: 60%;
+
+            }
+
+            .contact_person {
+                padding-bottom: 8%;
+                margin-top: 2%;
+
+            }
+
+            .middle_text,
+            .small_text,
+            .radio {
+
+                color: white;
+            }
+
+            .radio label:hover,
+            input:hover,
+            .select:hover {
+                background: none !important;
+            }
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20%;
+            line-height: 400%;
+            margin-left: 5%;
+        }
+
+        .name_surname {
+            width: 150%;
+
+        }
+
+        .form_labels {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 110%;
+            /* border: 0.01mm rgb(181, 181, 181) solid; */
+        }
+
+        .left_text {
+
+            margin-top: -60%;
+            margin-left: 40%;
+            width: 20%;
+
+        }
+
+        .left_background img {
+
+            height: 98dvh;
+        }
+
+        input,
+        button,
+        select {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input:hover,
+        .select:hover,
+        .radio label:hover {
+            background-color: #b0fbeb;
+
+        }
+
+
+        input [type="radio"]:checked {
+
+            accent-color: #025f4a;
+
+        }
+
+        .welcome_texts {
+            display: flex;
+            flex-direction: column;
+            margin-top: -115%;
+            padding-bottom: 24%;
+            width: 190%;
+        }
+
+        .big_text {
+            font-size: larger;
+            font-weight: bold;
+            color: #007A60;
+        }
+
+        .middle_text {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .small_text {
+            font-size: normal;
+        }
+
+        button {
+            color: #007A60;
+            font: large bold;
+            margin-top: 15%;
+        }
+    </style>
+
+
+
+
+</body>
+
+
+
+
+</html>
