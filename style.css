@@ -224,6 +224,11 @@ nav a:hover {
     cursor: pointer;
 }
 
+.online_insurance a,
+.online_insurance a:visited {
+    color: rgb(0, 0, 0);
+}
+
 /*<-------------------------------------------------------------- online insurance end -------------------------------------------------------> */
 
 
